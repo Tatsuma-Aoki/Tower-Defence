@@ -1,0 +1,84 @@
+@startuml
+left to right direction
+namespace gameSystem{
+    class MainFrame
+    abstract class Scene
+    abstract class SceneController
+    abstract class SceneModel
+    abstract class SceneView
+    class GameObject
+    interface SceneChangeListener
+
+    MainFrame o-> Scene
+    Scene o-> SceneView
+    Scene o-> SceneModel
+    Scene o-> SceneController
+
+    SceneModel o-> GameObject
+
+    MainFrame ..> SceneChangeListener
+    GameObject o-> Collider
+
+    SceneModel o- SceneChangeListener
+    SceneView o--> SceneModel
+    SceneController o--> SceneModel
+    SceneController o-> SceneView
+
+
+    namespace gameSystem.util{
+        class AnimationSprite 
+        class Camera
+        abstract class Collider
+        class CircleCollider
+        abstract class Drawable
+        class Effect
+        class GameTimer
+        class ImageManager
+        class Intent
+        class RectCollider
+        class Sprite
+        class Vector2
+        GameTimer --|> javax.swing.timer
+
+        Drawable --|> gameSystem.GameObject
+        Sprite --|> Drawable
+        AnimationSprite --|> Sprite
+
+        Camera --|> gameSystem.GameObject
+
+        CircleCollider --|> Collider
+        RectCollider --|> Collider
+        Effect --|> Sprite
+    }
+
+}
+
+namespace gameScene{
+    class GameScene
+    class GameSceneModel
+    class GameSceneController
+    class GameSceneView
+
+    GameScene --|> gameSystem.Scene
+    GameSceneModel --|> gameSystem.SceneModel
+    GameSceneView --|> gameSystem.SceneView
+    GameSceneController -|> gameSystem.SceneController
+
+    namespace gameMain{
+        abstract class BaseTurret
+        abstract class BaseEnemy
+        abstract class Tower
+
+        CannonTurret -|> BaseTurret
+        Zombie -|> BaseEnemy
+
+        BaseTurret -|> gameSystem.GameObject
+        BaseEnemy -|> gameSystem.GameObject
+        Tower -|> gameSystem.GameObject
+
+        gameScene.GameSceneModel o--> CannonTurret
+        gameScene.GameSceneModel o--> Zombie
+    }
+}
+
+@enduml

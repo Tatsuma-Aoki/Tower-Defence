@@ -1,0 +1,46 @@
+・data
+UECPicture.png Google Earth Pro
+
+枠 avg2.png http://www.vita-chi.net/sozai1.htm
+
+mahouzin.png https://prcm.jp/pic/original-image/id/5eXs1J2?keyword=%E9%AD%94%E6%B3%95%E9%99%A3%20%E9%BB%92&page=1
+
+bombEffect.png               https://pipoya.net/sozai/
+CannonTurret.png
+cannonball.png
+Enemy1.png
+Enemy2.png
+Enemy3.png
+Goblin.png
+pipo-btleffect175_192.png
+Summon.png
+turretAttackToEnemy.png     
+
+Arrow.png        Unity Asset Store
+Ballista.png 
+CannonTurret.png
+LaserTower.png
+
+・data/screen
+GameClear1.jpg        https://www.photo-ac.com/main/detail/4204439?title=%E5%88%9D%E6%97%A5%E3%81%AE%E5%87%BA&searchId=266879977 (photoAC)
+gameover screen1.jpg
+GameScreen1-zombie.png
+
+・data/sound
+StartScreen.wav   http://www.hmix.net/music_gallery/feeling/hard.htm (H/MIX GALLERY)
+Wave1.wav
+Wave2.wav
+Wave3.wav
+
+GameClear.wav   https://www.senses-circuit.com/sounds/bgm/jingle-24/ (Sences Circuit)
+Summon.wav
+
+GameOver.wav   https://dova-s.jp/se/play553.html (DOVA-SYNDROME)
+Countdown.wav
+TowerCollapse.wav
+Cannon1.wav
+
+EnemyDie.wav   https://umipla.com/soundeffect/2427 (効果音工房)
+
+EnemyAttack.wav   https://taira-komori.jpn.org/arms01.html (Taira Komori All Rights Reserved.　制作・著作　小森平)
+
